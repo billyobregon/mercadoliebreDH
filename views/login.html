@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">    
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/login.css">
+    <title>Login - Mercado Liebre</title>
+</head>
+<body>
+    <header>
+        <div class="header__container">
+            <div class="header__search">
+                <a href="/"><img src='/images/logo-mercado-liebre.svg' alt="logo" class="header__logo"></a>
+                <div class="search-container">
+                    <input type="search" placeholder="Buscar productos,marcas" class="header__searchbar">
+                    <i class="fas fa-search header__search-icon"></i>
+                </div>
+            </div>
+            <p class="header__promo"><i class="fas fa-hand-holding-usd header__hand-icon"></i>Comprá en cuotas y sin tarjeta de crédito<p>
+        </div>
+        <nav>
+            <ul class="header__navigation">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="header__login">
+                <li><a href="/register">Creá tu cuenta <i class="fas fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="header__burger-menu">
+            <i class="fas fa-bars burger-menu__icon"></i>
+        </div>
+    </header>
+    <main>
+        <section class="main__login-form">
+            <form action="/" method="POST">
+                <p>
+                    <input type="text" name="username" placeholder="Nombre de Usuario" minlength="2">
+                </p>
+                <p>
+                    <input type="password" name="password" placeholder="Contraseña">
+                </p>
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>

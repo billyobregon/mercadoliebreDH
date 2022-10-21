@@ -1,0 +1,301 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+body{
+    background: #ebebeb;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+header{
+    background: #EAC926;
+}
+
+.headerContainer{
+    padding: 2rem 1rem 1rem;
+}
+
+.headerSearch{
+    margin: 10px 0 2px;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+
+.headerLogo{
+    width: 35%;
+}
+
+.search-container{
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+    width: 50%;
+}
+.header__searchbar{
+    border: none;
+    width: 100%;
+}
+.header__search-icon{
+    font-size: 1rem;
+    color: #666666;
+
+}
+
+
+.headerPromo{
+    text-align: center;
+    padding: 10px;
+}
+
+header nav{
+    display: none;
+}
+
+header a{
+    text-decoration: none;
+    color: black;
+}
+
+header ul {
+    list-style: none;
+}
+
+.header__login{
+    padding: 15px 0;
+}
+
+.header__burger-menu{
+    text-align: center;
+    padding: 5px;
+}
+.burger-menu__icon{
+    color: white;
+    background:#1259c3;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 20px;
+}
+
+
+.body__banner > img{
+    display: block;
+}
+
+main{
+    background: #ebebeb;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main section{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+main article{
+    margin: 10px 0;
+    background: white;
+    max-width: 100%;
+}
+
+main article:hover{
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+}
+
+
+
+.article__shipping-icon{
+    transition: all 1s ease;
+    color: green;
+}
+
+main article:hover .article__shipping-icon {
+    transform: rotateZ(-90deg);
+}
+
+main h3{
+    font-size: 24px;
+    padding: 20px;
+}
+main section article > div{
+    position: relative;
+}
+main section article i{
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+    }
+
+.price-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.article__price{
+    font-size: 18px;
+}
+.article__discount{
+    font-size: 16px;
+    color:#39b54a;
+/*margin-left: 10px;*/    
+}
+
+.article__description{
+    font-size: 16px;
+    font-weight: 800px;
+    color:#666666;
+    margin-top: 20px;
+} 
+
+
+main article > div{
+    border-top: 1px solid #ebebeb;
+    padding: 25px;
+}
+
+
+
+img{
+    width: 100%;
+}
+
+
+
+.promose{
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    text-align: center;
+    background: white;
+}
+
+
+
+.footer__icon{
+    display: block;
+    color: #1259c3;
+    margin-bottom: 10px;
+    font-size: 2em;
+}
+
+footer > nav{
+    padding-top: 20px;
+}
+
+footer ul div {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer ul div > li {
+    padding: 0 20px;
+}
+
+footer li {
+    margin-top: 40px;
+    list-style-type: none;
+}
+
+.footer__copyright{
+    text-align: start;
+    
+}
+
+.footer__copyright h2{
+   font-size: 12px;
+   text-align: center;
+  
+}
+
+
+
+@media (min-width: 461px){
+    .header__container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header__promo{
+        max-width: 350px;
+        text-align: right;
+    }
+
+    .search-container{
+        background: none;
+    }
+
+    .headerSearch img {
+        max-width: 350px;
+    }
+
+    .header__search-icon{
+        border: 1px solid black;
+        background: white;
+        margin-left: 4px;
+    }
+    
+    header nav{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul{
+        display: flex;
+        align-items: center;
+    }
+
+    header nav ul li {
+        margin: 0 5px;
+    }
+
+    .header__burger-menu{
+        display: none;
+    }
+
+    main article{
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        max-width: 45%;
+    }
+
+
+}
+
+@media (min-width: 769px){
+    .header__container, header nav{
+        max-width: 1200px;
+        margin: auto;
+    }
+    main article{
+        max-width: 22%;
+    }
+    .header__searchbar{
+        height: 23px;
+    }
+    
+    .promose{
+        display: flex;
+        flex-direction: row;
+    }
+}

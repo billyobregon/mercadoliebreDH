@@ -1,0 +1,63 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background: #ebebeb;
+}
+
+header{
+    background: #EAC926;
+}
+
+form p {
+    margin: 15px;
+}
+
+input[type=text]{
+    height: 30px;
+    width: 100%;
+}
+input[type=email]{
+    height: 30px;
+    width: 100%;
+
+}
+
+input[type=date]{
+    color: #666;
+    width: 100%;
+
+}
+
+input[type=password]{
+    width: 100%;
+
+}
+form label{
+    display: block;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+form input{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+form button{
+    margin: 15px;
+    padding: 5px;
+}
+
+@media(min-width: 769px){
+    main section{
+        justify-content: center;
+        
+    }
+}

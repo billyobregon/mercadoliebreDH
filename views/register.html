@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">  
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>Registro Mercado Liebre</title>
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="headerSearch">
+                <img src='/images/logo-mercado-liebre.svg' alt="logo" class="headerLogo">
+                <div class="search-container">
+                    <input type="search" placeholder="Buscar productos,marcas" class="header__searchbar">
+                    <i class="fas fa-search header__search-icon"></i>
+                </div>
+            </div>
+            
+            <p class="header__promo"><i class="fas fa-hand-holding-usd header__hand-icon"></i>Compra en cuotas y sin tarjeta de credito<p>
+        </div>
+        <nav>
+            <ul class="header__navigation">
+                <li><a href="#">Ofertas</a></li>
+                <li><a href="#">Tiendas Oficiales</a></li>
+                <li><a href="#">Vender</a></li>
+                <li><a href="#">Ayuda</a></li>
+            </ul>
+            <ul class="header__login">
+                <li><a href="/register">Crea tu cuenta <i class="fas fa-id-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fas fa-sign-in-alt"></i></a></li>
+                <li><a href="#">Mis Compras <i class="fas fa-shopping-basket"></i></a></li>
+            </ul>
+        </nav>
+        <div class="header__burger-menu">
+            <i class="fas fa-bars burger-menu__icon"></i>
+        </div>
+    </header>
+    <main>
+        <section class="main__register-form">
+            <form action="/" method="POST">
+                <p>
+                    <input type="text" name="name-surname" placeholder="Nombre y Apellido">
+                </p>
+                <p>
+                    <input type="text" name="username" placeholder="Nombre de Usuario">
+                </p>
+                <p>
+                    <input type="email" name="email" placeholder="E-mail">
+                </p>
+                <p>
+                    <label for="birth-date">Fecha de Nacimiento</label>
+                    <input type="date" name="birth-date">
+                </p>
+                <p>
+                    <input type="text" name="adress" placeholder="Domicilio">
+                </p>
+                <p>
+                    <label for="user-profile">Perfil del Usuario</label>
+                    <input type="radio" name="user-profile" id="user-profile" value="buyer"> Comprador
+                    <input type="radio" name="user-profile" id="user-profile" value="seller"> Vendedor
+                </p>
+                <p>
+                    <label for="interests">Intereses</label>
+                    <input type="checkbox" name="interests" value="electronics"> Electro
+                    <input type="checkbox" name="interests" value="fashion"> Moda
+                    <input type="checkbox" name="interests" value="home"> Hogar
+                    <input type="checkbox" name="interests" value="toys"> Juguetería
+                    <input type="checkbox" name="interests" value="lifestyle"> Vida Sana
+                </p>
+                <p>
+                    <label for="user-photo">Foto de Usuario</label>
+                    <input type="file" name="user-photo" accept=".jpg, .png">
+                </p>
+                <p>
+                    <input type="password" name="password" placeholder="Contraseña">
+                </p>
+                <p>
+                    <input type="password" name="password-confirm" placeholder="Confirmar contraseña">
+                </p>
+                <button type="submit">Confirmar</button>
+                <button type="reset">Borrar todo</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
